@@ -1,8 +1,7 @@
 import React from "react";
 import { categories } from "../../utils/constants";
 
-const selectedCategory = "New";
-export const SideBar = () => {
+export const SideBar = ({ selectedCategory, setSelectedCategory }) => {
   return (
     <>
       {/* category */}
@@ -12,6 +11,7 @@ export const SideBar = () => {
       >
         {categories.map((category) => (
           <button
+            onClick={() => setSelectedCategory(category.name)}
             style={{
               background: category.name === selectedCategory && "#FC1503",
               color: "white",
