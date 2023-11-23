@@ -22,7 +22,6 @@ export const Feed = () => {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-
         <div className="w-full px-4 py-3 col-span-5">
           <h2 className="font-semibold text-3xl tracking-wide mb-3 ">
             {selectedCategory} <span className="text-red-500 ">videos</span>

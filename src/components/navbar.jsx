@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/favicon.ico";
 import SearchIcon from "@mui/icons-material/Search";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
@@ -10,10 +11,12 @@ export const Navbar = () => {
       "
       >
         <div className="flex items-center justify-between py-4 px-20 ">
-          <div className="flex items-center justify-center gap-3">
-            <img className="w-[20px]" src={logo} alt="logo" />
-            <h2 className="font-bold tracking-wider text-md">KNtube</h2>
-          </div>
+          <Link to="/">
+            <div className="flex items-center justify-center gap-3">
+              <img className="w-[20px]" src={logo} alt="logo" />
+              <h2 className="font-bold tracking-wider text-md">KNtube</h2>
+            </div>
+          </Link>
           <div className="flex justify-center  text-center bg-white rounded-[5rem] overflow-hidden px-2">
             <input
               type="text"
