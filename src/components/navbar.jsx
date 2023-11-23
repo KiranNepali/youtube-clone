@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/favicon.ico";
 import SearchIcon from "@mui/icons-material/Search";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
+
+  const onhandleSubmit = (e) => {
+    e.preventDefault();
+
+    if (searchTerm) {
+      navigate(`/search/${searchTerm}`);
+
+      setSearchTerm("");
+    }
+  };
   return (
     <div className="w-full bg-black text-white sticky top-0">
-      <form
-        action="
-      "
-      >
+      <form action="" onSubmit={onhandleSubmit}>
         <div className="flex items-center justify-between py-4 px-20 ">
           <Link to="/">
             <div className="flex items-center justify-center gap-3">
@@ -19,6 +28,8 @@ export const Navbar = () => {
           </Link>
           <div className="flex justify-center  text-center bg-white rounded-[5rem] overflow-hidden px-2">
             <input
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
               type="text"
               className="bg-white outline-none   text-black py-1"
             />

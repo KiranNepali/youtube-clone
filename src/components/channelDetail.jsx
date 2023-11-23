@@ -32,7 +32,7 @@ export const ChannelDetail = () => {
 
       <div className="-mt-[113px] flex flex-col justify-center items-center w-full   ">
         <ChannelCard channelDetail={channelDetail} />
-        <p className="text-[12px] font-medium text-[#e9e7e7] -mt-[2rem]">
+        <p className="text-[12px] font-medium text-[#e9e7e7] -mt-[1rem]">
           {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString(
             "en-US"
           )}
