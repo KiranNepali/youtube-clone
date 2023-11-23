@@ -17,7 +17,7 @@ export const Navbar = () => {
     }
   };
   return (
-    <div className="w-full bg-black text-white sticky top-0">
+    <div className="w-full bg-black text-white sticky top-0 z-10">
       <form action="" onSubmit={onhandleSubmit}>
         <div className="flex items-center justify-between py-4 px-20 ">
           <Link to="/">
