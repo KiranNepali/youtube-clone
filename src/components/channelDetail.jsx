@@ -40,7 +40,7 @@ export const ChannelDetail = () => {
         </p>
       </div>
 
-      <div className="mx-[15rem] mt-10">
+      <div className="mx-2 sm:mx-[15rem] mt-10">
         <Videos videos={videos} />
       </div>
     </div>

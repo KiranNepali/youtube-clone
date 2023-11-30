@@ -17,7 +17,7 @@ export const Feed = () => {
 
   return (
     <div className="w-full text-white mt-4">
-      <div className="grid grid-cols-6 ">
+      <div className="sm:grid sm:grid-cols-6 ">
         <SideBar
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}

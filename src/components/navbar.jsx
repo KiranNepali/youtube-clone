@@ -19,7 +19,7 @@ export const Navbar = () => {
   return (
     <div className="w-full bg-black text-white sticky top-0 z-10">
       <form action="" onSubmit={onhandleSubmit}>
-        <div className="flex items-center justify-between py-4 px-20 ">
+        <div className="flex flex-col sm:flex-row items-center justify-between py-4 px-5 gap-5 sm:gap-0 sm:px-20 ">
           <Link to="/">
             <div className="flex items-center justify-center gap-3">
               <img className="w-[20px]" src={logo} alt="logo" />

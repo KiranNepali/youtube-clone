@@ -6,8 +6,8 @@ export const SideBar = ({ selectedCategory, setSelectedCategory }) => {
     <>
       {/* category */}
       <div
-        className="flex flex-col col-span-1  
-          px-4 border-r-[1px]   overflow-y-auto border-gray-600 "
+        className="flex justify-start items-start sm:flex-col sm:col-span-1  
+          px-4 border-r-[1px]   overflow-x-auto border-gray-600 "
       >
         {categories.map((category) => (
           <button
