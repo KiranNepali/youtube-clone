@@ -15,14 +15,16 @@ export const SearchFeed = () => {
 
   return (
     <div className="w-full text-white mt-4">
-      <div className="mx-[12rem]">
+      <div className="sm:mx-[12rem]">
         <div className="w-full px-4 py-3">
           <h2 className="font-bold text-3xl  mb-3 ">
             <span className="text-gray-300">Search result for:</span>{" "}
             {searchTerm}
-            <span className="text-red-500 "> videos</span>
+            <span className="text-red-500 ">videos</span>
           </h2>
-          <Videos videos={videos} />
+          <div>
+            <Videos videos={videos} />
+          </div>
         </div>
       </div>
     </div>

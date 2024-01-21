@@ -31,9 +31,9 @@ export const VideoDetail = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-4 gap-2 mx-10">
-        <div className="col-span-3">
-          <div className="w-full h-[42rem] sticky top-[80px] rounded-lg overflow-hidden  z-10">
+      <div className="mt-10 sm:grid sm:grid-cols-4 sm:gap-2 sm:mx-10">
+        <div className="h-[30rem] sm:col-span-3 ">
+          <div className="w-full h-[25rem] sm:h-[42rem] sm:sticky top-[80px] rounded-lg sm:overflow-hidden z-10">
             <ReactPlayer
               url={`https://www.youtube.com/watch?v=${id}`}
               controls
@@ -60,7 +60,7 @@ export const VideoDetail = () => {
             </div>
           </div>
         </div>
-        <div className="col-span-1 mx-10  ">
+        <div className=" sm:col-span-1 sm:mx-10  ">
           <Videos videos={videos} justify="column" />
         </div>
       </div>
