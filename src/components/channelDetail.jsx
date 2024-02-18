@@ -36,7 +36,7 @@ export const ChannelDetail = () => {
           {parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString(
             "en-US"
           )}
-          <span className=""> Subscribers</span>
+          <span className="">Subscribers</span>
         </p>
       </div>
 
